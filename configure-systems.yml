@@ -1,0 +1,9 @@
+---
+
+- name: Configure systems
+  hosts: all
+  gather_facts: yes
+  become: yes
+  roles:
+    - apache_install
+    - apache_remove
