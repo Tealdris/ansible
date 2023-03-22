@@ -3,9 +3,9 @@
 - name: Configure systems
   hosts: all
   gather_facts: yes
+  bacome_method: runas
   roles:
     - role: win_test
-      bacome_method: runas
       when: ansible_facts['os_family'] == "Windows"
     # - apache_install
     # - apache_remove
