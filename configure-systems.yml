@@ -3,7 +3,6 @@
 - name: Configure systems
   hosts: all
   gather_facts: yes
-  become: yes
   roles:
     - role: win_test
       when: ansible_facts['os_family'] == "Windows"

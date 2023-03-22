@@ -2,7 +2,14 @@
 
 - name: ping win server
   win_ping:
+  register: ping
 
-- name: Get info for all installed services
-  ansible.windows.win_service_info:
-  register: service_info
+- debug:
+    var: ping
+
+- name: Setup
+  setup:
+  register: setup
+
+- debug:
+    var: setup
