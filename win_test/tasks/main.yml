@@ -1,0 +1,8 @@
+---
+
+- name: ping win server
+  win_ping:
+
+- name: Get info for all installed services
+  ansible.windows.win_service_info:
+  register: service_info
