@@ -5,5 +5,7 @@
   gather_facts: yes
   become: yes
   roles:
-    - apache_install
-    - apache_remove
+    - role: win_test
+      when: ansible_facts['os_family'] == "Windows"
+    # - apache_install
+    # - apache_remove
