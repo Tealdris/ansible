@@ -1,0 +1,6 @@
+---
+
+bastion_user: test
+bastion_ip: 172.18.0.3
+
+# vars file for psrp_open_connection

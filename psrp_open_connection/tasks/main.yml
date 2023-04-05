@@ -1,0 +1,5 @@
+---
+- name: open connection tunel for psrp
+  shell: 'ssh -4 -D 1234 -p 22 {{ bastion_user }}@{{ bastion_ip }} -N &'
+
+# tasks file for psrp_open_connection

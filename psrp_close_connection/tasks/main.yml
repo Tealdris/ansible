@@ -1,0 +1,5 @@
+---
+- name: close connection tunel for psrp
+  shell: 'kill -9 $(pgrep -u root ssh)'
+
+# tasks file for psrp_close_connection
