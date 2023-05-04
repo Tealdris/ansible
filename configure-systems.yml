@@ -1,18 +1,6 @@
----
-
-- name: configure psrp connection
-  hosts: localhost
-  roles:
-    - role: psrp_open_connection
-
 - name: Configure win systems bastion
   hosts: all
   gather_facts: yes
   roles:
-    - role: win_test
-      when: ansible_facts['os_family'] == "Windows"
-
-- name: configure psrp connection
-  hosts: localhost
-  roles:
-    - role: psrp_close_connection
+    - role: apache_install
+    - role: apache_remove

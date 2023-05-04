@@ -1,5 +1,5 @@
 ---
 
 - name: remove apache2
-  package: name=apache2 update_cache=yes state=latest force_apt_get=yes
+  package: name=apache2 update_cache=yes state=absent force_apt_get=yes
   

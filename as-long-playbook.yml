@@ -1,0 +1,14 @@
+- name: Configure systems 
+  hosts: all
+  gather_facts: yes
+
+
+  include_role: install_pkg
+  loop: {{ package_list }}
+  loop_control: 
+    loop_var: package_name
+
+  include_role: remove_pkg
+  loop: {{ package_list }}
+  loop_control: 
+    loop_var: package_name

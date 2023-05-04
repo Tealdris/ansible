@@ -1,0 +1,21 @@
+package_list:
+  - acl
+  - at
+  - audit
+  - audit-libs
+  - coreutils
+  - cronie
+  - dmidecode
+  - findutils
+  - grep
+  - grubby
+  - iproute
+  - iptables
+  - lvm2
+  - net-tools
+  - sudo
+  - util-linux
+  - apache
+  - docker
+  - java
+  
