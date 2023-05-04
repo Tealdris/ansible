@@ -1,6 +1,6 @@
 package_list:
   - httpd
-  - docker
+  - docker-ce
   - python-pip
   - tree
   - nmap

@@ -5,6 +5,5 @@ package_list:
   - tree
   - nmap
   - docker-compose
-  - kubernetes
   - remmina
   
