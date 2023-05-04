@@ -4,11 +4,11 @@
 
 
   include_role: install_pkg
-  loop: {{ package_list }}
+  with_items: {{ package_list }}
   loop_control: 
     loop_var: package_name
 
   include_role: remove_pkg
-  loop: {{ package_list }}
+  with_items: {{ package_list }}
   loop_control: 
     loop_var: package_name
