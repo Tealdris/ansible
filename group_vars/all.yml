@@ -1,17 +1,9 @@
 package_list:
-  - acl
-  - at
-  - audispd-plugins
-  - auditd
-  - cron
-  - dmidecode
-  - iproute2
-  - iptables
-  - lvm2
-  - net-tools
-  - sudo
   - apache2
   - docker
   - python-pip
-  - npm
-  
+  - tree
+  - nmap
+  - docker-compose
+  - kubernetes
+  - remmina
