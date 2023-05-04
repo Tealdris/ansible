@@ -1,5 +1,11 @@
 ---
 # tasks file for remove_pkg
 
-- name: Remove {{ package_name }}
-  package: name={{ package_name }} update_cache=yes state=absent force_apt_get=yes
+- name: Include OS-specific variables
+  include_tasks: variables.yml
+
+- name: remove packages
+  include_tasks: remove.yml
+  loop: "{{ package_list }}"
+  loop_control:
+    loop_var: package_name

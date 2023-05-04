@@ -1,5 +1,11 @@
 ---
 # tasks file for install_pkg
 
-- name: Install {{ package_name }}
-  package: name={{ package_name }} update_cache=yes state=latest force_apt_get=yes
+- name: Include OS-specific variables
+  include_tasks: variables.yml
+
+- name: remove packages
+  include_tasks: install.yml
+  loop: "{{ package_list }}"
+  loop_control:
+    loop_var: package_name

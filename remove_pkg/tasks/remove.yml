@@ -1,0 +1,4 @@
+---
+
+- name: Remove {{ package_name }}
+  package: name={{ package_name }} update_cache=yes state=absent force_apt_get=yes

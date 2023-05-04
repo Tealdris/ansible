@@ -1,15 +1,17 @@
+---
+
 - name: remove install
   hosts: all
   tasks:
     - name: install
       include_role: 
         name: install_pkg
-      with_items: "{{ package_list }}"
-      loop_control:
-        loop_var: package_name
+      # with_items: "{{ package_list }}"
+      # loop_control:
+      #   loop_var: package_name
     - name: remove
       include_role: 
         name: remove_pkg
-      with_items: "{{ package_list }}"
-      loop_control:
-        loop_var: package_name
+      # with_items: "{{ package_list }}"
+      # loop_control:
+      #   loop_var: package_name
