@@ -1,14 +1,14 @@
-- name: Configure systems 
-  hosts: all
-  gather_facts: yes
-
-
-  include_role: install_pkg
-  with_items: {{ package_list }}
-  loop_control: 
-    loop_var: package_name
-
-  include_role: remove_pkg
-  with_items: {{ package_list }}
-  loop_control: 
-    loop_var: package_name
+- hosts: install remove
+  tasks:
+    - name: install
+      include_role: 
+        name: install_pkg
+      with_items: "{{ package_list }}"
+      loop_control:
+        loop_var: package_name
+    - name: remove
+      include_role: 
+        name: remove_pkg
+      with_items: "{{ package_list }}"
+      loop_control:
+        loop_var: package_name
