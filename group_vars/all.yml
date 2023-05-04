@@ -1,21 +1,17 @@
 package_list:
   - acl
   - at
-  - audit
-  - audit-libs
-  - coreutils
-  - cronie
+  - audispd-plugins
+  - auditd
+  - cron
   - dmidecode
-  - findutils
-  - grep
-  - grubby
-  - iproute
+  - iproute2
   - iptables
   - lvm2
   - net-tools
   - sudo
-  - util-linux
-  - apache
+  - apache2
   - docker
-  - java
+  - python-pip
+  - npm
   
