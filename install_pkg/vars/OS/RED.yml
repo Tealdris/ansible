@@ -1,0 +1,10 @@
+package_list:
+  - httpd
+  - docker
+  - python-pip
+  - tree
+  - nmap
+  - docker-compose
+  - kubernetes
+  - remmina
+  
