@@ -1,4 +1,4 @@
 ---
 
 - name: Install {{ package_name }}
-  package: name={{ package_name }} update_cache=yes state=latest force_apt_get=yes
+  package: name={{ package_name }} update_cache=yes state=latest
