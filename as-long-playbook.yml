@@ -1,4 +1,5 @@
-- hosts: install remove
+- name: remove install
+  hosts: all
   tasks:
     - name: install
       include_role: 
